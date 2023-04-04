@@ -7,9 +7,14 @@ module.exports = {
     extend: {
       colors: {
         pink: "#ff52bf",
-        paleCyan: "#ebfbff"
+        paleCyan: "#ebfbff",
+        darkCyan: "#00252e",
+        grayishBlue: "#808d99"
       }
     },
+    screens:{
+      'lg':'1044px'
+    }
   },
   plugins: [],
 }
