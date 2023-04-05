@@ -1,100 +1,92 @@
-<header>
-  <nav class="flex justify-between p-6">
-    <!-- Logo -->
-    <img class="w-32 max-w-h-full" src="/assets/images/logo.svg" alt="logo">
-    <!-- CTA try it free -->
-    <a href="#" class="px-5 py-1 font-semibold bg-white rounded-full shadow-lg">Try It Free</a>
-  </nav>
+<header class="flex items-center justify-between p-5 mx-auto max-w-7xl">
+  <img src="/assets/images/logo.svg" alt="logo" class="w-32">
+  <a href="#" class="px-6 py-0.5 font-semibold border border-gray-100 rounded-full shadow-xl">Try It Free</a>
 </header>
-<!-- <img src="/assets/images/bg-hero-mobile.svg" alt="hero"> -->
-<main>
-  <section class="lg:flex lg:flex-row">
-    <div class="lg:flex-col lg:flex">
-      <h1 class="max-w-md mb-10 text-4xl font-semibold text-center md:text-5xl text-darkCyan">Build The Community Your
-        Fans Will
-        Love
+
+<main class="mx-auto body max-w-7xl">
+  <section class="lg:grid lg:grid-cols-3 hero">
+    <div class="flex flex-col gap-5 mt-10 text-center lg:col-span-1 lg:justify-center">
+      <h1 class="w-4/5 mx-auto text-2xl font-semibold xl:text-5xl heading lg:text-left lg:w-full lg:text-4xl">
+        Build The Community Your Fans Will Love
       </h1>
-      <p class="max-w-md px-3 mb-10 text-lg font-medium text-center lg:text-left text-darkCyan">Huddle re-imagines the
-        way we build
-        communities.
-        You have a
-        voice,
-        but so
-        does your
-        audience.
-        Create connections
-        with your users as you engage in genuine discussion.</p>
-      <a class="block px-10 py-3 mx-auto mb-20 font-medium text-white rounded-full w-max bg-pink" href="#">Get Started
-        For
-        Free</a>
+      <p class="w-10/12 mx-auto text-base font-normal text-darkCyan lg:text-left lg:w-full">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections
+        with your users as you engage in genuine discussion.
+      </p>
+
+      <a class="block w-4/6 py-2 mx-auto text-base text-white rounded-full lg:mx-0 cta__getstarted bg-pink">
+        Get Started For Free
+      </a>
     </div>
-    <div class="px-4">
-      <img src="/assets/images/illustration-mockups.svg" alt="mockups">
-    </div>
+    <img src="/assets/images/illustration-mockups.svg" alt="mockups" class="w-10/12 mx-auto lg:col-span-2 lg:w-full">
+
   </section>
-  <div class="flex flex-col gap-10 mb-20">
+  <section class="flex flex-col gap-10 cards">
     <app-card image_url="/assets/images/illustration-grow-together.svg" title="Grow Together"
-      paragraph="Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form."></app-card>
+      paragraph="Generate meaningful discussion with your audience and build a string, loyal community. THink of the insightful conversations you miss out on with a feedback form."></app-card>
     <app-card image_url="/assets/images/illustration-flowing-conversation.svg" title="Flowing Conversations"
-      paragraph="You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow."></app-card>
+      paragraph="Your wouldn't paginate a conversation in real life, so why do it online? Our thread have just-in-time loading for a more natural flow."
+      [isReverse]="false"></app-card>
     <app-card image_url="/assets/images/illustration-your-users.svg" title="Your Users"
-      paragraph="It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app users can start chatting immediately."></app-card>
-  </div>
-
-  <!-- CTA -->
-  <div class="z-50 flex flex-col items-center justify-center gap-6 py-8 mx-4 bg-red-600 rounded-2xl">
-    <p class="font-bold ">Ready To Build Your Community?</p>
-    <a class="block px-10 py-3 mx-auto font-medium text-white rounded-full w-max bg-pink" href="#">Get Started For
-      Free</a>
-  </div>
-
-  <footer class="px-4 bg-darkCyan -mt-9 -z-50">
-    <!-- logo -->
-    <section class="flex flex-col gap-4 pt-40">
-      <div class="flex gap-4 text-white">
-        <img src="/assets/images/icon-location.svg" alt="location icon" class="w-6 h-full">
-        <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dicta molestiae quo
-          consectetur natus vel facilis ex explicabo dolorum </p>
-      </div>
-      <div class="flex items-center gap-4 text-white">
-        <img src="/assets/images/icon-phone.svg" alt="location icon" class="w-5 h-full">
-        <p class="text-base">+1-543-123-4567</p>
-      </div>
-      <div class="flex items-center gap-4 text-white">
-        <img src="/assets/images/icon-email.svg" alt="location icon" class="w-5 h-full">
-        <p class="text-base">example@fylo.com</p>
-      </div>
-    </section>
-
-    <nav class="flex flex-col gap-4 mt-10">
-      <li class="text-white list-none">
-        <a href="#">About Us</a>
-      </li>
-      <li class="text-white list-none">
-        <a href="#">What We Do</a>
-      </li>
-      <li class="text-white list-none">
-        <a href="#">FAQ</a>
-      </li>
-      <li class="text-white list-none">
-        <a href="#">Carrer</a>
-      </li>
-      <li class="text-white list-none">
-        <a href="#">Blog</a>
-      </li>
-      <li class="text-white list-none">
-        <a href="#">Contact Us</a>
-      </li>
-    </nav>
-
-    <div class="flex justify-center gap-3 mt-10 socials">
-      <div class="flex items-center justify-center w-10 h-10 border border-white rounded-full"> <i
-          class="text-white fa fa-facebook"></i></div>
-      <div class="flex items-center justify-center w-10 h-10 border border-white rounded-full"> <i
-          class="text-white fa fa-twitter"></i></div>
-      <div class="flex items-center justify-center w-10 h-10 border border-white rounded-full"> <i
-          class="text-white fa fa-instagram"></i></div>
-    </div>
-    <p class="pb-10 mt-5 text-sm text-center text-white">&copy; Copyright 2018 Huddle. All rights reserved.</p>
-  </footer>
+      paragraph="It takes no time at all to integrate Huddle with your pp's authentication solution. This means, once signed in to your app, your users can start chatting immediately."></app-card>
+  </section>
 </main>
+<footer class="relative px-4 pt-32 mt-32 text-base text-white bg-darkCyan">
+  <section
+    class="absolute flex flex-col w-11/12 max-w-2xl gap-5 py-8 text-lg font-bold text-center transform -translate-x-1/2 bg-white border border-gray-100 lg:py-16 rounded-xl left-1/2 -top-20 text-darkCyan lg:text-2xl">
+
+    <p>Ready To Build Your Community?</p>
+    <a class="w-4/6 py-2 mx-auto text-sm text-white rounded-full cta__getstarted bg-pink lg:p-4">
+      Get Started For Free
+    </a>
+
+  </section>
+  <section class="flex flex-col gap-5 pb-10 lg:grid lg:grid-cols-4">
+    <img src="/assets/images/logo.svg" alt="logo" class="w-32 mb-2 invert">
+
+    <div class="flex flex-col gap-2">
+      <section class="flex">
+        <div class="w-10 h-10">
+          <img src="/assets/images/icon-location.svg" alt="location">
+        </div>
+        <p class="w-5/6">Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod
+          tempor
+          incididunt ut
+          labore et dolore magna
+          aliqua</p>
+      </section>
+      <section class="flex">
+        <div class="w-10 h-10">
+          <img src="/assets/images/icon-phone.svg" alt="location">
+        </div>
+        <p class="w-5/6">+1-543-123-4567</p>
+      </section>
+      <section class="flex">
+        <div class="w-10 h-10">
+          <img src="/assets/images/icon-email.svg" alt="location">
+        </div>
+        <p class="w-5/6">example@fylo.com</p>
+      </section>
+    </div>
+    <ul class="flex flex-col gap-2">
+      <li>About Us</li>
+      <li>What We do</li>
+      <li>FAQ</li>
+      <li>Carrer</li>
+      <li>Blog</li>
+      <li>Contact Us</li>
+    </ul>
+    <div class="flex justify-center gap-4 socials">
+      <div class="flex items-center justify-center border rounded-full w-9 h-9">
+        <i class="fa fa-facebook"></i>
+      </div>
+      <div class="flex items-center justify-center border rounded-full w-9 h-9">
+        <i class="fa fa-twitter"></i>
+      </div>
+      <div class="flex items-center justify-center border rounded-full w-9 h-9">
+        <i class="fa fa-instagram"></i>
+      </div>
+    </div>
+    <p class="text-sm">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+  </section>
+</footer>

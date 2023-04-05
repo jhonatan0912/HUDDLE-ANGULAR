@@ -11,6 +11,8 @@ export class CardComponent implements OnInit {
   @Input() title: string = '';
   @Input() paragraph: string = '';
 
+  @Input() isReverse: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {

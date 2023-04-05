@@ -1,0 +1,17 @@
+cambios en home en ipad
+falta contactos | empresa, por ejemplo buscas geor, te aparecen los miembros y le das click al contacto que quieras agregar
+
+*********************************************************************************************************
+BARRA DE PROGRESO:
+mensual
+trimestral
+anual
+semestral
+
+*********************************************************************************************************
+
+SIDEBAR -> adaptar al de bandeja
+home
+aplicaciones
+bandeja
+perfil
