@@ -31,9 +31,9 @@
       paragraph="It takes no time at all to integrate Huddle with your pp's authentication solution. This means, once signed in to your app, your users can start chatting immediately."></app-card>
   </section>
 </main>
-<footer class="relative px-4 pt-32 mt-32 text-base text-white bg-darkCyan lg:pt-64">
+<footer class="relative px-4 pt-32 mt-32 text-base text-white bg-darkCyan lg:pt-40">
   <section
-    class="absolute flex flex-col w-11/12 max-w-2xl gap-5 py-8 text-lg font-bold text-center transform -translate-x-1/2 bg-white border border-gray-100 lg:py-16 rounded-xl left-1/2 -top-20 text-darkCyan lg:text-2xl">
+    class="absolute flex flex-col w-11/12 max-w-2xl gap-5 py-8 text-lg font-bold text-center transform -translate-x-1/2 bg-white border border-gray-100 lg:py-10 rounded-xl left-1/2 -top-20 text-darkCyan lg:text-2xl">
 
     <p>Ready To Build Your Community?</p>
     <a class="w-4/6 py-2 mx-auto text-sm text-white rounded-full cta__getstarted bg-pink lg:p-4">
@@ -41,10 +41,10 @@
     </a>
 
   </section>
-  <section class="flex flex-col gap-5 pb-10 lg:grid lg:grid-cols-4">
-    <img src="/assets/images/logo.svg" alt="logo" class="w-32 mb-2 invert">
+  <section class="flex flex-col gap-5 pb-10 lg:grid lg:grid-cols-3 lg:w-10/12 lg:mx-auto">
 
     <div class="flex flex-col gap-2">
+      <img src="/assets/images/logo.svg" alt="logo" class="w-32 mb-2 invert">
       <section class="flex">
         <div class="w-10 h-10">
           <img src="/assets/images/icon-location.svg" alt="location">
@@ -68,15 +68,21 @@
         <p class="w-5/6">example@fylo.com</p>
       </section>
     </div>
-    <ul class="flex flex-col gap-2">
-      <li>About Us</li>
-      <li>What We do</li>
-      <li>FAQ</li>
-      <li>Carrer</li>
-      <li>Blog</li>
-      <li>Contact Us</li>
+
+    <ul class="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:mt-10">
+      <div>
+        <li>About Us</li>
+        <li>What We do</li>
+        <li>FAQ</li>
+      </div>
+      <div>
+        <li>Carrer</li>
+        <li>Blog</li>
+        <li>Contact Us</li>
+      </div>
     </ul>
-    <div class="flex justify-center gap-4 socials">
+
+    <div class="flex justify-center gap-4 socials lg:mt-10">
       <div class="flex items-center justify-center border rounded-full w-9 h-9">
         <i class="fa fa-facebook"></i>
       </div>
@@ -87,6 +93,6 @@
         <i class="fa fa-instagram"></i>
       </div>
     </div>
-    <p class="text-sm text-center">&copy; Copyright 2018 Huddle. All rights reserved.</p>
   </section>
+  <p class="text-sm text-center lg:text-right">&copy; Copyright 2018 Huddle. All rights reserved.</p>
 </footer>
