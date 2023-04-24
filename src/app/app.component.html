@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 
 <!-- Header -->
-<header class="bg-paleCyan body bg-[url('/assets/images/bg-hero-mobile.svg')] pb-10">
+<header
+  class="bg-paleCyan body bg-[url('/assets/images/bg-hero-mobile.svg')] pb-10 lg:bg-[url('/assets/images/bg-hero-desktop.svg')]">
   <section class="flex justify-between p-5">
     <img class="w-28" src="/assets/images/logo.svg" alt="logo">
-    <a class="px-4 py-1 text-sm rounded-full cta__tyf heading" href="#"> Try It Free </a>
+    <a class="bg-white px-4 py-1 text-sm rounded-full cta__tyf heading" href="#"> Try It Free </a>
   </section>
-  <section class="flex flex-col gap-8 mt-20 text-center">
-    <h1 class="text-3xl heading">Build The Community Your Fans Will Love</h1>
-    <p class="w-10/12 px-1 mx-auto text-base">Huddle re-imagines the way we build communities. You have a voice, but so
-      does
-      your audience. Create connections with your users as you angage in genuine discussion.</p>
-    <a href="#" class="block py-2 mx-auto text-sm font-bold text-white rounded-full bg-pink w-fit px-14">Get Started
-      For Free</a>
+
+  <section class="lg:grid lg:grid-cols-3">
+    <div class="flex flex-col gap-8 mt-20 text-center lg:col-span-1 lg:justify-center lg:mt-0">
+      <h1 class="text-3xl heading lg:text-start lg:mx-10 lg:w-10/12">Build The Community Your Fans Will Love</h1>
+      <p class="w-10/12 px-1 mx-auto text-base lg:text-start">Huddle re-imagines the way we build communities. You have
+        a voice, but
+        so
+        does
+        your audience. Create connections with your users as you angage in genuine discussion.</p>
+      <a href="#" class="block py-3.5 mx-auto text-sm font-bold text-white rounded-full bg-pink w-fit px-14 lg:mx-11">Get
+        Started
+        For Free</a>
+    </div>
+    <img class="px-5 mt-10 lg:col-span-2" src="/assets/images/illustration-mockups.svg" alt="mockups">
   </section>
-  <img class="px-5 mt-10" src="/assets/images/illustration-mockups.svg" alt="mockups">
+
 </header>
 <!-- Header -->
 
