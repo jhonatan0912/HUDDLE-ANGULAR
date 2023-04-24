@@ -1,17 +1,18 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-card',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
 
-  @Input() image_url: string = '';
+  @Input() imagePath: string = '';
   @Input() title: string = '';
-  @Input() paragraph: string = '';
-
-  @Input() isReverse: boolean = true;
+  @Input() content: string = '';
 
   constructor() { }
 

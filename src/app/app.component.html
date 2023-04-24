@@ -1,98 +1,78 @@
-<header class="flex items-center justify-between p-5 mx-auto max-w-7xl">
-  <img src="/assets/images/logo.svg" alt="logo" class="w-32">
-  <a href="#" class="px-6 py-0.5 font-semibold border border-gray-100 rounded-full shadow-xl">Try It Free</a>
+<!DOCTYPE html>
+
+<!-- Header -->
+<header class="bg-paleCyan body bg-[url('/assets/images/bg-hero-mobile.svg')] pb-10">
+  <section class="flex justify-between p-5">
+    <img class="w-28" src="/assets/images/logo.svg" alt="logo">
+    <a class="" href="#"> Try It Free </a>
+  </section>
+  <section class="flex flex-col gap-8 mt-20 text-center">
+    <h1 class="text-3xl heading">Build The Community Your Fans Will Love</h1>
+    <p class="w-10/12 px-1 mx-auto text-base">Huddle re-imagines the way we build communities. You have a voice, but so
+      does
+      your audience. Create connections with your users as you angage in genuine discussion.</p>
+    <a href="#" class="block py-2 mx-auto text-sm font-bold text-white rounded-full bg-pink w-fit px-14">Get Started
+      For Free</a>
+  </section>
+  <img class="px-5 mt-10" src="/assets/images/illustration-mockups.svg" alt="mockups">
 </header>
+<!-- Header -->
 
-<main class="mx-auto body max-w-7xl">
-  <section class="lg:grid lg:grid-cols-3 hero">
-    <div class="flex flex-col gap-5 mt-10 text-center lg:col-span-1 lg:justify-center">
-      <h1 class="w-4/5 mx-auto text-2xl font-semibold xl:text-5xl heading lg:text-left lg:w-full lg:text-4xl">
-        Build The Community Your Fans Will Love
-      </h1>
-      <p class="w-10/12 mx-auto text-base font-normal text-darkCyan lg:text-left lg:w-full">
-        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections
-        with your users as you engage in genuine discussion.
-      </p>
+<!-- Main -->
+<main class="flex flex-col gap-10 mt-14">
+  <app-card imagePath="/assets/images/illustration-grow-together.svg" title="Grow Together"
+    content="Generate meaningful discussions with your audience and build astrong, loyal community. Think of the insightful conversations you miss out on with a feedback form."></app-card>
 
-      <a class="block w-4/6 py-2 mx-auto text-base text-white rounded-full lg:mx-0 cta__getstarted bg-pink">
-        Get Started For Free
-      </a>
-    </div>
-    <img src="/assets/images/illustration-mockups.svg" alt="mockups" class="w-10/12 mx-auto lg:col-span-2 lg:w-full">
+  <app-card imagePath="/assets/images/illustration-flowing-conversation.svg" title="Flowing Conversations"
+    content="Your wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow"></app-card>
 
-  </section>
-  <section class="flex flex-col gap-10 cards">
-    <app-card image_url="/assets/images/illustration-grow-together.svg" title="Grow Together"
-      paragraph="Generate meaningful discussion with your audience and build a string, loyal community. THink of the insightful conversations you miss out on with a feedback form."></app-card>
-    <app-card image_url="/assets/images/illustration-flowing-conversation.svg" title="Flowing Conversations"
-      paragraph="Your wouldn't paginate a conversation in real life, so why do it online? Our thread have just-in-time loading for a more natural flow."
-      [isReverse]="false"></app-card>
-    <app-card image_url="/assets/images/illustration-your-users.svg" title="Your Users"
-      paragraph="It takes no time at all to integrate Huddle with your pp's authentication solution. This means, once signed in to your app, your users can start chatting immediately."></app-card>
-  </section>
+  <app-card imagePath="/assets/images/illustration-your-users.svg" title="Your Users"
+    content="It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately"></app-card>
 </main>
-<footer class="relative px-4 pt-32 mt-32 text-base text-white bg-darkCyan lg:pt-40 lg:pb-10">
-  <section
-    class="absolute flex flex-col w-11/12 max-w-2xl gap-5 py-8 text-lg font-bold text-center transform -translate-x-1/2 bg-white border border-gray-100 lg:py-10 rounded-xl left-1/2 -top-20 text-darkCyan lg:text-2xl">
+<!-- Main -->
 
-    <p>Ready To Build Your Community?</p>
-    <a class="w-4/6 py-2 mx-auto text-sm text-white rounded-full cta__getstarted bg-pink lg:p-4">
-      Get Started For Free
-    </a>
+<!-- Footer -->
+<footer class="pb-10 mt-32 text-white bg-darkCyan">
+  <article class="flex flex-col gap-8 px-2 pt-32 text-base md:grid md:grid-cols-3">
+    <section class="flex flex-col gap-8">
 
-  </section>
-  <section class="flex flex-col gap-5 pb-10 lg:grid lg:grid-cols-3 lg:w-10/12 lg:mx-auto">
+      <img class="w-40 invert" src="/assets/images/logo.svg" alt="logo">
 
-    <div class="flex flex-col gap-2">
-      <img src="/assets/images/logo.svg" alt="logo" class="w-32 mb-2 invert">
-      <section class="flex">
-        <div class="w-10 h-10">
-          <img src="/assets/images/icon-location.svg" alt="location">
-        </div>
-        <p class="w-5/6">Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do eiusmod
-          tempor
-          incididunt ut
-          labore et dolore magna
-          aliqua</p>
-      </section>
-      <section class="flex">
-        <div class="w-10 h-10">
-          <img src="/assets/images/icon-phone.svg" alt="location">
-        </div>
-        <p class="w-5/6">+1-543-123-4567</p>
-      </section>
-      <section class="flex">
-        <div class="w-10 h-10">
-          <img src="/assets/images/icon-email.svg" alt="location">
-        </div>
-        <p class="w-5/6">example@fylo.com</p>
-      </section>
-    </div>
+      <article class="flex gap-7">
+        <div class="w-10 h-10"><img src="/assets/images/icon-location.svg" alt="location"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua</p>
+      </article>
 
-    <ul class="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:mt-10">
-      <div>
-        <li>About Us</li>
-        <li>What We do</li>
-        <li>FAQ</li>
-      </div>
-      <div>
-        <li>Carrer</li>
-        <li>Blog</li>
-        <li>Contact Us</li>
-      </div>
+      <article class="flex">
+        <div class="w-10 h-10"><img src="/assets/images/icon-phone.svg" alt="phone"></div>
+        <p>+1-543-123-4567</p>
+      </article>
+
+      <article class="flex">
+        <div class="w-10 h-10"><img src="/assets/images/icon-email.svg" alt="email"></div>
+        <p>example@fylo.com</p>
+      </article>
+
+    </section>
+
+    <ul class="flex flex-col gap-3 text-lg">
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">What we Do</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Carrer</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact Us</a></li>
     </ul>
 
-    <div class="flex justify-center gap-4 socials lg:mt-10">
-      <div class="flex items-center justify-center border rounded-full w-9 h-9">
-        <i class="fa fa-facebook"></i>
+    <section class="flex justify-center gap-3">
+      <div class="flex items-center justify-center w-10 h-10 border rounded-full"><i class="fa fa-facebook"></i>
       </div>
-      <div class="flex items-center justify-center border rounded-full w-9 h-9">
-        <i class="fa fa-twitter"></i>
-      </div>
-      <div class="flex items-center justify-center border rounded-full w-9 h-9">
-        <i class="fa fa-instagram"></i>
-      </div>
-    </div>
-  </section>
-  <p class="text-sm text-center lg:text-right">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+      <div class="flex items-center justify-center w-10 h-10 border rounded-full"><i class="fa fa-twitter"></i></div>
+      <div class="flex items-center justify-center w-10 h-10 border rounded-full"><i class="fa fa-instagram"></i></div>
+    </section>
+
+  </article>
+  <p class="mt-5 text-sm text-center">&copy; Copyright 2018 Huddle. All rights reserved.</p>
 </footer>
+<!-- Footer -->

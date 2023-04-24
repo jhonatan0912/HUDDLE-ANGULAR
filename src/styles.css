@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   font-size: 18px;
+}
+
+.heading {
+  font-family: 'Poppins', sans-serif;
+}
+
+.body,
+.cta {
+  font-family: 'Open Sans', sans-serif;
 }
