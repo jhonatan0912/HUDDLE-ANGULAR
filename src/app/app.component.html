@@ -16,7 +16,8 @@
         so
         does
         your audience. Create connections with your users as you angage in genuine discussion.</p>
-      <a href="#" class="block py-3.5 mx-auto text-sm font-bold text-white rounded-full bg-pink w-fit px-14 lg:mx-11">Get
+      <a href="#"
+        class="block py-3.5 mx-auto text-sm font-bold text-white rounded-full bg-pink w-fit px-14 lg:mx-11">Get
         Started
         For Free</a>
     </div>
@@ -29,25 +30,27 @@
 <!-- Main -->
 <main class="flex flex-col gap-10 mt-14">
   <app-card imagePath="/assets/images/illustration-grow-together.svg" title="Grow Together"
-    content="Generate meaningful discussions with your audience and build astrong, loyal community. Think of the insightful conversations you miss out on with a feedback form."></app-card>
+    content="Generate meaningful discussions with your audience and build astrong, loyal community. Think of the insightful conversations you miss out on with a feedback form."
+    [isReverse]="true"></app-card>
 
   <app-card imagePath="/assets/images/illustration-flowing-conversation.svg" title="Flowing Conversations"
     content="Your wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow"></app-card>
 
   <app-card imagePath="/assets/images/illustration-your-users.svg" title="Your Users"
-    content="It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately"></app-card>
+    content="It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately"
+    [isReverse]="true"></app-card>
 </main>
 <!-- Main -->
 
 <!-- Footer -->
-<footer class="relative pb-10 mt-32 text-white bg-darkCyan">
+<footer class="relative pb-10 mt-32 text-white bg-darkCyan lg:mt-44">
   <div
-    class="absolute flex flex-col w-11/12 gap-5 p-4 py-10 text-black transform -translate-x-1/2 bg-white border border-gray-100 rounded-2xl modal -top-20 left-1/2">
+    class="absolute flex flex-col w-11/12 gap-5 p-4 py-10 text-black transform -translate-x-1/2 bg-white border border-gray-100 rounded-2xl modal -top-20 left-1/2 lg:w-5/12">
     <h2 class="text-center heading">Ready To Build Your Community?</h2>
     <a href="#" class="block py-4 mx-auto text-sm font-bold text-white rounded-full bg-pink w-fit px-14">Get Started
       For Free</a>
   </div>
-  <article class="flex flex-col gap-8 px-2 pt-32 text-base md:grid md:grid-cols-3">
+  <article class="flex flex-col gap-8 px-2 pt-32 text-base lg:grid lg:grid-cols-3 lg:w-10/12 lg:mx-auto">
     <section class="flex flex-col gap-8">
 
       <img class="w-40 invert" src="/assets/images/logo.svg" alt="logo">
@@ -70,16 +73,20 @@
 
     </section>
 
-    <ul class="flex flex-col gap-3 text-lg">
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">What we Do</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">Carrer</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact Us</a></li>
+    <ul class="flex flex-col gap-3 text-lg lg:flex-row mt-12">
+      <div class="lg:flex-1">
+        <li class="lg:mb-2"><a href="#">About Us</a></li>
+        <li class="lg:mb-2"><a href="#">What we Do</a></li>
+        <li><a href="#">FAQ</a></li>
+      </div>
+      <div class="lg:flex-1">
+        <li class="lg:mb-2"><a href="#">Carrer</a></li>
+        <li class="lg:mb-2"><a href="#">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </div>
     </ul>
 
-    <section class="flex justify-center gap-3">
+    <section class="flex justify-center gap-3 lg:mt-12">
       <div class="flex items-center justify-center w-10 h-10 border rounded-full"><i class="fa fa-facebook"></i>
       </div>
       <div class="flex items-center justify-center w-10 h-10 border rounded-full"><i class="fa fa-twitter"></i></div>
@@ -87,6 +94,6 @@
     </section>
 
   </article>
-  <p class="mt-5 text-sm text-center">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+  <p class="mt-5 text-sm text-center lg:text-end lg:mr-20">&copy; Copyright 2018 Huddle. All rights reserved.</p>
 </footer>
 <!-- Footer -->

@@ -13,6 +13,7 @@ export class CardComponent implements OnInit {
   @Input() imagePath: string = '';
   @Input() title: string = '';
   @Input() content: string = '';
+  @Input() isReverse: boolean = false;
 
   constructor() { }
 
